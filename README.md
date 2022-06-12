@@ -1,3 +1,3 @@
 # Freecodecamp Project
 
-[Tribute Page](tribute-page)
+[Tribute Page](../tree/tribute-page)
