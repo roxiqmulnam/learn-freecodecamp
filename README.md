@@ -1,3 +1,3 @@
 # Freecodecamp Project
 
-[Tribute Page] (learn-freecodecamp/tree/tribute-page)
+[https://github.com/roxiqmulnam/learn-freecodecamp/tree/tribute-page] (tree/tribute-page.md)
