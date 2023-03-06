@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap");
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#description,
+#title {
+  text-align: center;
+}
+#title {
+  margin-top: 50px;
+  font-size: 2rem;
+}
+#description {
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  margin: 20px auto;
+  padding: 50px;
+  background-color: var(--color-darkblue-alpha);
+  border-radius: 5px;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  margin: 7px 0;
+}
+input::placeholder{
+  font-size: 1rem;
+}
+
+select,
+option {
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#checkbox-container,
+#radio-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+#radion-container, input[type='radio'] {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+#radion-container, input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.desc {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+.desc > span {
+  font-size: 1rem;
+}
+
+textarea {
+  color: black;
+  padding: 15px 10px;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+#submit {
+  background-color: var(--color-green);
+  border: none;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
