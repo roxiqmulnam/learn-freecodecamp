@@ -6,8 +6,15 @@
   list-style: none;
   text-decoration: none;
 }
-.wrapper{
-    margin: 0 100px;
+.wrapper {
+  margin: auto;
+  max-width: 1000px;
+}
+button {
+  background-color: #f1c40f;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 header {
   position: fixed;
@@ -18,26 +25,112 @@ header {
   height: 75px;
   padding: 0 40px;
   top: 0;
+  z-index: 10;
+  background-color: white;
 }
 #header-img {
   max-width: 300px;
 }
 #nav-bar > ul {
   display: flex;
+  width: 35vw;
+  justify-content: space-between;
 }
 .nav-link {
-  margin-left: 110px;
   color: black;
 }
-
-#hero > h1 {
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 75px 0;
+}
+#hero > h2 {
   text-align: center;
 }
-#footer {
+#form {
+  display: flex;
+  flex-direction: column;
 }
-
-@media screen and (max-width: 992px) {
-  #footer {
-    height: 500px;
-  }
+input[type='email'] {
+  margin: 20px 0;
+  padding: 5px;
+  width: 300px;
+}
+.btn-primary {
+  padding: 10px;
+  width: 150px;
+  margin: auto;
+  font-weight: 900;
+}
+.material {
+  display: flex;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+}
+.video {
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  width: 100%;
+  max-width: 550px;
+}
+.pricing {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  border: solid 1px black;
+  text-align: center;
+  width: 30%;
+  margin: 40px 10px;
+  line-height: 30px;
+}
+.title {
+  padding: 10px 0;
+  background-color: #ddd;
+}
+.price {
+  padding: 0 50px;
+  margin: 15px 0;
+}
+.price > ul {
+  margin: 15px 0;
+}
+.btn-card {
+  padding: 10px 20px;
+}
+#footer {
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: #ddd;
+}
+#footer > ul {
+  display: flex;
+}
+#footer > ul > li {
+  margin-left: 40px;
+}
+#footer > ul > li > a {
+  color: black;
+}
+#footer > p {
+  color: #444;
+  margin: 10px 0;
+  font-size: 16px;
 }
